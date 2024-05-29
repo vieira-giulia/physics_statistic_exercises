@@ -1,0 +1,48 @@
+[tool.ruff]
+ignore = ["E501", "B018"]
+select = [
+    "F",
+    "E",
+    "W",
+    "C90",
+    "I",
+    "N",
+    "D",
+    "UP",
+    "S",
+    "B",
+    "A",
+    "C4",
+    "ICN",
+    "PD",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "RUF",
+]
+
+[tool.poetry]
+name = "ifec"
+version = "0.1.0"
+description = ""
+authors = ["Igor <igorlfs@ufmg.br>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+matplotlib = "^3.7.1"
+numba = "^0.57"
+scipy = "^1.10.1"
+catppuccin-matplotlib = "^0.4"
+networkx = "^3.1"
+rustworkx = "^0.12.1"
+pandas = "^2.0.2"
+plotly = "^5.14.1"
+pygobject = "^3.44.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
